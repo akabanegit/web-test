@@ -1,0 +1,28 @@
+1、当建立多行多列的表格子项时，直接设置该<th rolspan=? rowspan=?> 当进入下一行<tr>时，无需管上一行，直接可以覆盖
+https://blog.csdn.net/xianzhixianzhixian/article/details/68926154
+
+2、scope的使用，colgroup的使用
+3、<colgroup>
+            <col span="2">%%代表横跨了两列 相当于
+				<col>
+				<col>
+            <col style="border: 2px solid black">%%代表了第三列
+		%%接下来空白表示都没有使用col
+   </colgroup>
+
+        <thead>
+            <tr>
+
+                <td colspan=2></td>%%代表这一单元格占据了两列
+                <th scope="col">Name</th>
+                <th scope="col">Mass (10<sup>24</sup>kg)</th>
+                <th scope="col">Diameter (km)</th>
+                <th scope="col">Density (kg/m<sup>3</sup>)</th>
+                <th scope="col">Gravity (m/s<sup>2</sup>)</th>
+                <th scope="col">Length of day (hours)</th>
+                <th scope="col">Distance from Sun (10<sup>6</sup>km)</th>
+                <th scope="col">Mean temperature (°C)</th>
+                <th scope="col">Number of moons</th>
+                <th scope="col">Notes</th>
+            </tr>
+        </thead>
